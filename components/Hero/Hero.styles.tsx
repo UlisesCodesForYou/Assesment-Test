@@ -13,9 +13,8 @@ export default createStyles((theme) => ({
     flexDirection: 'column',
     justifyContent: 'flex-end',
     alignItems: 'flex-start',
-    paddingBottom: theme.spacing.xl * 13,
+    paddingBottom: theme.spacing.xl * 11,
     zIndex: 1,
-    position: 'relative',
 
     [theme.fn.smallerThan('sm')]: {
       height: 500,
@@ -29,7 +28,7 @@ export default createStyles((theme) => ({
     fontWeight: 600,
     lineHeight: 1.1,
 
-    [theme.fn.smallerThan('sm')]: {
+    [theme.fn.smallerThan('md')]: {
       fontSize: 40,
       lineHeight: 1.2,
     },
@@ -46,7 +45,7 @@ export default createStyles((theme) => ({
     fontWeight: 500,
     marginTop: '-5rem',
 
-    [theme.fn.smallerThan('sm')]: {
+    [theme.fn.smallerThan('md')]: {
       fontSize: 40,
       lineHeight: 1.2,
     },
