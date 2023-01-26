@@ -3,24 +3,22 @@ import useStyles from './FirstPage.styles';
 import ImageCarousel from '../Carousel';
 
 export const FirstPage = () => {
-  const { classes, theme } = useStyles();
+  const { classes } = useStyles();
 
   return (
     <>
-      <Card radius="md" style={{ backgroundImage: 'url(Mountain-2.png)' }} className={classes.card}>
-        <Overlay
-          gradient={`linear-gradient(105deg, ${theme.black} 20%, #312f2f 50%, ${theme.colors.gray[4]} 100%)`}
-          opacity={0.55}
-          zIndex={0}
-        />
+      <Card style={{ backgroundImage: 'url(Mountain-1.png)' }} className={classes.card}>
+        <Overlay opacity={0.08} zIndex={0} />
 
         <div className={classes.content}>
+          <Text>01</Text>
           <Text size="lg" weight={700} className={classes.title}>
-            Hello
+            History
           </Text>
 
-          <Text size="sm" className={classes.description}>
-            lorem ipsum
+          <Text size="md" className={classes.description}>
+            Aliquip sint enim laborum nostrud ullamco. Do dolor irure ipsum irure amet. Et officia
+            est consectetur anim qui esse velit proident. Qui veniam velit esse id velit aute Lorem
           </Text>
         </div>
         <div className={classes.carousel}>

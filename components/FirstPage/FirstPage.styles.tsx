@@ -2,7 +2,7 @@ import { createStyles } from '@mantine/core';
 
 export default createStyles((theme) => ({
   card: {
-    marginTop: '1rem',
+    marginTop: '3rem',
     height: 800,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
@@ -16,25 +16,21 @@ export default createStyles((theme) => ({
     position: 'absolute',
     padding: theme.spacing.xl,
     zIndex: 1,
-    top: 0,
+    top: '10rem',
     bottom: 0,
     right: 0,
-    left: 0,
-  },
-
-  action: {
-    position: 'absolute',
-    bottom: theme.spacing.xl,
-    right: theme.spacing.xl,
+    left: '10rem',
   },
 
   title: {
-    color: theme.white,
+    color: '#343A40',
     marginBottom: theme.spacing.xs / 2,
+    fontSize: 50,
   },
 
   description: {
-    color: theme.white,
-    maxWidth: 220,
+    color: 'black',
+    maxWidth: 330,
+    display: 'inline',
   },
 }));
