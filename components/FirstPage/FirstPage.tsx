@@ -12,11 +12,13 @@ export const FirstPage = () => {
 
         <div className={classes.content}>
           <Text className={classes.numberText}>01</Text>
-          <Text size="lg" weight={700} className={classes.title}>
+          <Text size="lg" className={classes.title}>
             History
           </Text>
 
-          <Text size="md" className={classes.description}>
+          <Text className={classes.description}>
+            Aliquip sint enim laborum nostrud ullamco. Do dolor irure ipsum irure amet. Et officia
+            est consectetur anim qui esse velit proident. Qui veniam velit esse id velit aute Lorem
             Aliquip sint enim laborum nostrud ullamco. Do dolor irure ipsum irure amet. Et officia
             est consectetur anim qui esse velit proident. Qui veniam velit esse id velit aute Lorem
           </Text>
