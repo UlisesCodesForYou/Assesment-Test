@@ -1,4 +1,5 @@
 import { Card, Overlay, Text } from '@mantine/core';
+import { IconSquare } from '@tabler/icons';
 import useStyles from './FirstPage.styles';
 import ImageCarousel from '../Carousel';
 
@@ -15,6 +16,7 @@ export const FirstPage = () => {
           <Text size="lg" className={classes.title}>
             History
           </Text>
+          <IconSquare className={classes.squareFiller} />
 
           <Text className={classes.description}>
             Aliquip sint enim laborum nostrud ullamco. Do dolor irure ipsum irure amet. Et officia

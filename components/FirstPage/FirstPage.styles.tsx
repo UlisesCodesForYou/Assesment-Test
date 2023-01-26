@@ -16,10 +16,13 @@ export default createStyles((theme) => ({
     position: 'absolute',
     padding: theme.spacing.xl,
     zIndex: 1,
-    top: 60,
+    top: 0,
     bottom: 0,
     right: 0,
     left: 150,
+    [theme.fn.smallerThan('md')]: {
+      left: 0,
+    },
   },
 
   numberText: {
@@ -36,6 +39,11 @@ export default createStyles((theme) => ({
     fontSize: 30,
     fontWeight: 'bold',
     marginTop: '8rem',
+  },
+
+  squareFiller: {
+    backgroundColor: '#343A40',
+    opacity: '.4',
   },
 
   description: {
