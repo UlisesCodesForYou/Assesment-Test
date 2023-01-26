@@ -7,10 +7,12 @@ export const Hero = () => {
   return (
     <div className={classes.hero}>
       <Container className={classes.container}>
-        <Title className={classes.title} order={1}>
-          LOS ANGELES
-          <Text className={classes.titleText}>MOUNTAINS</Text>
-        </Title>
+        <div className={classes.subContainer}>
+          <Title className={classes.title} order={1}>
+            LOS ANGELES
+            <Text className={classes.titleText}>MOUNTAINS</Text>
+          </Title>
+        </div>
       </Container>
     </div>
   );

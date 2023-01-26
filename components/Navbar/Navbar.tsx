@@ -6,11 +6,11 @@ import useStyles from './Navbar.styles';
 const HEADER_HEIGHT = 60;
 const links = [
   {
-    label: 'History',
+    label: '01. History',
     link: 'history',
   },
   {
-    label: 'Team',
+    label: '02. Team',
     link: 'team',
   },
 ];

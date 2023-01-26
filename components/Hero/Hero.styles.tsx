@@ -18,8 +18,13 @@ export default createStyles((theme) => ({
 
     [theme.fn.smallerThan('sm')]: {
       height: 500,
-      paddingBottom: theme.spacing.xl * 3,
+      paddingBottom: theme.spacing.xl * 13,
     },
+  },
+
+  subContainer: {
+    display: 'flex',
+    flexDirection: 'column-reverse',
   },
 
   title: {
@@ -30,12 +35,10 @@ export default createStyles((theme) => ({
 
     [theme.fn.smallerThan('md')]: {
       fontSize: 40,
-      lineHeight: 1.2,
     },
 
     [theme.fn.smallerThan('xs')]: {
       fontSize: 28,
-      lineHeight: 1.3,
     },
   },
 
@@ -52,25 +55,6 @@ export default createStyles((theme) => ({
 
     [theme.fn.smallerThan('xs')]: {
       fontSize: 28,
-      lineHeight: 1.3,
-    },
-  },
-
-  description: {
-    color: theme.white,
-    maxWidth: 600,
-
-    [theme.fn.smallerThan('sm')]: {
-      maxWidth: '100%',
-      fontSize: theme.fontSizes.sm,
-    },
-  },
-
-  control: {
-    marginTop: theme.spacing.xl * 1.5,
-
-    [theme.fn.smallerThan('sm')]: {
-      width: '100%',
     },
   },
 }));
