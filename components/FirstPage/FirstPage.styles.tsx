@@ -9,7 +9,12 @@ export default createStyles((theme) => ({
   },
 
   carousel: {
-    marginTop: '32rem',
+    marginTop: '-15rem',
+    width: '50%',
+    display: 'block',
+    textAlign: 'center',
+    marginRight: 'auto',
+    marginLeft: 'auto',
   },
 
   content: {
