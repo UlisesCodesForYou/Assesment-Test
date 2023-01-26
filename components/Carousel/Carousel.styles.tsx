@@ -5,7 +5,7 @@ export default createStyles((theme) => ({
     height: 240,
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'space-between',
+    justifyContent: 'space-around',
     alignItems: 'flex-start',
     backgroundSize: 'cover',
     backgroundPosition: 'center',

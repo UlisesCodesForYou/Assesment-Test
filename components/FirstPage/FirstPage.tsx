@@ -11,7 +11,7 @@ export const FirstPage = () => {
         <Overlay opacity={0.08} zIndex={0} />
 
         <div className={classes.content}>
-          <Text>01</Text>
+          <Text className={classes.numberText}>01</Text>
           <Text size="lg" weight={700} className={classes.title}>
             History
           </Text>
@@ -21,6 +21,7 @@ export const FirstPage = () => {
             est consectetur anim qui esse velit proident. Qui veniam velit esse id velit aute Lorem
           </Text>
         </div>
+
         <div className={classes.carousel}>
           <ImageCarousel />
         </div>

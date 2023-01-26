@@ -16,16 +16,25 @@ export default createStyles((theme) => ({
     position: 'absolute',
     padding: theme.spacing.xl,
     zIndex: 1,
-    top: '10rem',
+    top: 60,
     bottom: 0,
     right: 0,
-    left: '10rem',
+    left: 100,
+  },
+
+  numberText: {
+    color: '#343A40',
+    opacity: '.4',
+    fontSize: 150,
+    float: 'left',
+    fontWeight: 'bolder',
   },
 
   title: {
     color: '#343A40',
     marginBottom: theme.spacing.xs / 2,
-    fontSize: 50,
+    fontSize: 30,
+    marginTop: '8rem',
   },
 
   description: {
