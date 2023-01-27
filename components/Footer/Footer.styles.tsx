@@ -13,20 +13,26 @@ export default createStyles((theme) => ({
     alignItems: 'left',
   },
 
+  imageColor: {
+    backgroundColor: '#7488a7',
+  },
+
   textContainer: {
     marginLeft: '.5rem',
   },
 
   title: {
-    color: '#343A40',
+    color: '#7488a7',
     fontSize: 17,
     fontWeight: 600,
+    marginTop: '.25rem',
   },
 
   titleText: {
-    color: '#004d78',
+    color: '#7488a7',
     fontSize: 19,
     fontWeight: 500,
+    marginTop: '-.5rem',
   },
 
   inner: {
@@ -42,6 +48,7 @@ export default createStyles((theme) => ({
   },
 
   links: {
+    color: '#7488a7',
     [theme.fn.smallerThan('xs')]: {
       marginTop: theme.spacing.md,
     },
