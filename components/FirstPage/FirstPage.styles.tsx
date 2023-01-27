@@ -30,9 +30,6 @@ export default createStyles((theme) => ({
   },
 
   numberText: {
-    color: '#343A40',
-    opacity: '.4',
-    fontSize: 150,
     float: 'left',
     fontWeight: 'bolder',
   },

@@ -1,4 +1,4 @@
-import { Card, Overlay, Text } from '@mantine/core';
+import { Card, Overlay, Image } from '@mantine/core';
 import useStyles from './FirstPage.styles';
 import ImageCarousel from '../Carousel';
 
@@ -7,21 +7,12 @@ export const FirstPage = () => {
 
   return (
     <>
-      <Card style={{ backgroundImage: 'url(Mountain-1.png)' }} className={classes.card}>
+      <Card style={{ backgroundImage: 'url(First-Page-Image.png)' }} className={classes.card}>
         <Overlay opacity={0.08} zIndex={0} />
 
         <div className={classes.content}>
-          <Text className={classes.numberText}>01</Text>
-          <Text size="lg" className={classes.title}>
-            History
-          </Text>
-
-          <Text className={classes.description}>
-            Aliquip sint enim laborum nostrud ullamco. Do dolor irure ipsum irure amet. Et officia
-            est consectetur anim qui esse velit proident. Qui veniam velit esse id velit aute Lorem
-            Aliquip sint enim laborum nostrud ullamco. Do dolor irure ipsum irure amet. Et officia
-            est consectetur anim qui esse velit proident. Qui veniam velit esse id velit aute Lorem
-          </Text>
+          <Image className={classes.numberText} width={170} height="auto" src="01-Image.png" />
+          <Image className={classes.title} src="HSTRY.png" width={150} height="auto" />
         </div>
       </Card>
       <div className={classes.carousel}>
