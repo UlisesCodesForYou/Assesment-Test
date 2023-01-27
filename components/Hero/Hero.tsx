@@ -1,4 +1,4 @@
-import { Container, Title, Text } from '@mantine/core';
+import { Container, Image } from '@mantine/core';
 import useStyles from './Hero.styles';
 
 export const Hero = () => {
@@ -7,12 +7,11 @@ export const Hero = () => {
   return (
     <div className={classes.hero}>
       <Container className={classes.container}>
-        <div className={classes.subContainer}>
-          <Title className={classes.title} order={1}>
-            LOSANGELES
-            <Text className={classes.titleText}>MOUNTAINS</Text>
-          </Title>
-        </div>
+        <Image
+          src="Los-Angeles-hero-Text.png"
+          alt="Los Angeles text"
+          className={classes.imageContainer}
+        />
       </Container>
     </div>
   );

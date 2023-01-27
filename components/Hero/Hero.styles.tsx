@@ -2,8 +2,7 @@ import { createStyles } from '@mantine/core';
 
 export default createStyles((theme) => ({
   hero: {
-    backgroundImage: 'url(Mountain-3.png)',
-    backgroundSize: 'cover',
+    backgroundImage: 'url(Hero.png)',
     backgroundPosition: 'center',
   },
 
@@ -12,8 +11,8 @@ export default createStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'flex-end',
-    alignItems: 'flex-start',
-    paddingBottom: theme.spacing.xl * 11,
+    width: '50%',
+    paddingBottom: theme.spacing.xl * 10,
     zIndex: 1,
 
     [theme.fn.smallerThan('sm')]: {
@@ -22,39 +21,8 @@ export default createStyles((theme) => ({
     },
   },
 
-  subContainer: {
-    display: 'flex',
-    flexDirection: 'column-reverse',
-  },
-
-  title: {
-    color: '#343A40',
-    fontSize: 120,
-    fontWeight: 600,
-    lineHeight: 1.1,
-
-    [theme.fn.smallerThan('md')]: {
-      fontSize: 40,
-    },
-
-    [theme.fn.smallerThan('xs')]: {
-      fontSize: 28,
-    },
-  },
-
-  titleText: {
-    color: '#50627e',
-    fontSize: 133,
-    fontWeight: 500,
-    marginTop: '-5rem',
-
-    [theme.fn.smallerThan('md')]: {
-      fontSize: 40,
-      lineHeight: 1.2,
-    },
-
-    [theme.fn.smallerThan('xs')]: {
-      fontSize: 28,
-    },
+  imageContainer: {
+    marginLeft: '-4rem',
+    marginBottom: '3.5rem',
   },
 }));
