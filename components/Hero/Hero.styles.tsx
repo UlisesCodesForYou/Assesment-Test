@@ -2,7 +2,7 @@ import { createStyles } from '@mantine/core';
 
 export default createStyles((theme) => ({
   hero: {
-    backgroundImage: 'url(Mountain-1.png)',
+    backgroundImage: 'url(Mountain-3.png)',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
   },
@@ -44,7 +44,7 @@ export default createStyles((theme) => ({
 
   titleText: {
     color: '#50627e',
-    fontSize: 137,
+    fontSize: 133,
     fontWeight: 500,
     marginTop: '-5rem',
 

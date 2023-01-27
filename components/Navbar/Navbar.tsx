@@ -1,5 +1,15 @@
 import { useState } from 'react';
-import { Burger, Container, Group, Header, Image, Paper, Transition } from '@mantine/core';
+import {
+  Burger,
+  Container,
+  Group,
+  Header,
+  Image,
+  Paper,
+  Text,
+  Title,
+  Transition,
+} from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import useStyles from './Navbar.styles';
 
@@ -46,6 +56,12 @@ export const NavigationBar = () => {
             width={50}
             height={50}
           />
+          <div className={classes.textContainer}>
+            <Title className={classes.title} order={1}>
+              LOSANGELES
+              <Text className={classes.titleText}>MOUNTAINS</Text>
+            </Title>
+          </div>
         </div>
         <Group spacing={5} className={classes.links}>
           {items}

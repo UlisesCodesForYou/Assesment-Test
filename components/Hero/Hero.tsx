@@ -9,7 +9,7 @@ export const Hero = () => {
       <Container className={classes.container}>
         <div className={classes.subContainer}>
           <Title className={classes.title} order={1}>
-            LOS ANGELES
+            LOSANGELES
             <Text className={classes.titleText}>MOUNTAINS</Text>
           </Title>
         </div>

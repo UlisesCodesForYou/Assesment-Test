@@ -29,14 +29,33 @@ export default createStyles((theme) => ({
     alignItems: 'center',
     height: '100%',
     maxWidth: '100%',
-    margin: '0rem 5rem',
+    margin: '0rem 13rem',
     [theme.fn.smallerThan('sm')]: {
       margin: '0rem 1rem',
     },
   },
 
   imageContainer: {
+    display: 'flex',
     alignItems: 'left',
+  },
+
+  textContainer: {
+    marginLeft: '.5rem',
+  },
+
+  title: {
+    color: '#343A40',
+    fontSize: 17,
+    fontWeight: 600,
+    marginTop: '.25rem',
+  },
+
+  titleText: {
+    color: '#50627e',
+    fontSize: 19,
+    fontWeight: 500,
+    marginTop: '-.5rem',
   },
 
   links: {
