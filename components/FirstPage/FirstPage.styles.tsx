@@ -6,6 +6,12 @@ export default createStyles((theme) => ({
     height: 800,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundImage: 'url(First-Page-Image.png)',
+  },
+
+  imageContainer: {
+    marginTop: '6rem',
   },
 
   carousel: {
@@ -19,36 +25,32 @@ export default createStyles((theme) => ({
 
   content: {
     position: 'absolute',
+    maxWidth: '100%',
     padding: theme.spacing.xl,
-    top: 0,
-    bottom: 0,
-    right: 0,
-    left: 150,
+    left: 250,
     [theme.fn.smallerThan('md')]: {
       left: 0,
     },
   },
 
-  numberText: {
-    float: 'left',
-    fontWeight: 'bolder',
+  history: {
+    position: 'absolute',
+    padding: theme.spacing.xl,
+    left: 350,
+    top: 65,
+    [theme.fn.smallerThan('md')]: {
+      left: 100,
+    },
   },
 
-  title: {
-    color: '#343A40',
-    marginBottom: theme.spacing.xs / 2,
-    fontSize: 30,
-    fontWeight: 'bold',
-    marginTop: '8rem',
-  },
-
-  squareFiller: {
-    backgroundColor: '#343A40',
-    opacity: '.4',
-  },
-
-  description: {
-    color: 'black',
-    maxWidth: 1000,
+  lorem: {
+    position: 'absolute',
+    maxWidth: '100%',
+    padding: theme.spacing.xl,
+    left: 300,
+    top: 130,
+    [theme.fn.smallerThan('md')]: {
+      left: 0,
+    },
   },
 }));
