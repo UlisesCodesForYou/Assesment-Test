@@ -49,18 +49,9 @@ export const NavigationBar = () => {
     <Header height={HEADER_HEIGHT} mb={120} className={classes.root}>
       <Container className={classes.header}>
         <div className={classes.imageContainer}>
-          <Image
-            radius="xl"
-            src="Mountain-Drawing.png"
-            alt="Mountain Drawing"
-            width={50}
-            height={50}
-          />
+          <Image radius="xl" src="Navbar-Image.png" alt="Mountain Drawing" width={50} height={50} />
           <div className={classes.textContainer}>
-            <Title className={classes.title} order={1}>
-              LOSANGELES
-              <Text className={classes.titleText}>MOUNTAINS</Text>
-            </Title>
+            <Image src="Los-Angeles-Mountains-Navbar-Img.png" alt="Los Angeles Mountains" />
           </div>
         </div>
         <Group spacing={5} className={classes.links}>
@@ -69,7 +60,7 @@ export const NavigationBar = () => {
 
         <Burger opened={opened} onClick={toggle} className={classes.burger} size="sm" />
 
-        <Transition transition="pop-top-right" duration={200} mounted={opened}>
+        <Transition transition="pop-bottom-right" duration={200} mounted={opened}>
           {(styles) => (
             <Paper className={classes.dropdown} withBorder style={styles}>
               {items}

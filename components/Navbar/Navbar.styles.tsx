@@ -42,20 +42,7 @@ export default createStyles((theme) => ({
 
   textContainer: {
     marginLeft: '.5rem',
-  },
-
-  title: {
-    color: '#343A40',
-    fontSize: 17,
-    fontWeight: 600,
     marginTop: '.25rem',
-  },
-
-  titleText: {
-    color: '#50627e',
-    fontSize: 19,
-    fontWeight: 500,
-    marginTop: '-.5rem',
   },
 
   links: {

@@ -4,6 +4,7 @@ export default createStyles((theme) => ({
   hero: {
     backgroundImage: 'url(Hero.png)',
     backgroundPosition: 'center',
+    backgroundSize: 'cover',
   },
 
   container: {
@@ -11,7 +12,7 @@ export default createStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'flex-end',
-    width: '50%',
+    width: '40%',
     paddingBottom: theme.spacing.xl * 10,
     zIndex: 1,
 
@@ -22,7 +23,7 @@ export default createStyles((theme) => ({
   },
 
   imageContainer: {
-    marginLeft: '-4rem',
+    marginLeft: '-5rem',
     marginBottom: '3.5rem',
   },
 }));
