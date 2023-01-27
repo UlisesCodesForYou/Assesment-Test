@@ -43,7 +43,7 @@ export default createStyles((theme) => ({
   },
 
   titleText: {
-    color: '#004d78',
+    color: '#50627e',
     fontSize: 137,
     fontWeight: 500,
     marginTop: '-5rem',

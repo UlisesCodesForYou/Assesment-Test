@@ -5,6 +5,7 @@ import Head from 'next/head';
 import { ColorScheme, ColorSchemeProvider, MantineProvider } from '@mantine/core';
 import { NotificationsProvider } from '@mantine/notifications';
 import NavigationBar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 export default function App(props: AppProps & { colorScheme: ColorScheme }) {
   const { Component, pageProps } = props;
@@ -30,6 +31,7 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
           <NotificationsProvider>
             <Component {...pageProps} />
           </NotificationsProvider>
+          <Footer />
         </MantineProvider>
       </ColorSchemeProvider>
     </>

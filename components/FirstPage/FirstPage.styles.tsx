@@ -20,7 +20,6 @@ export default createStyles((theme) => ({
   content: {
     position: 'absolute',
     padding: theme.spacing.xl,
-    zIndex: 1,
     top: 0,
     bottom: 0,
     right: 0,
