@@ -1,6 +1,5 @@
 import { Carousel } from '@mantine/carousel';
-import { useMediaQuery } from '@mantine/hooks';
-import { Paper, Text, Title, useMantineTheme } from '@mantine/core';
+import { Paper, Text, Title } from '@mantine/core';
 import useStyles from './Carousel.styles';
 
 interface CardProps {
@@ -34,34 +33,32 @@ function Card({ image, title, category }: CardProps) {
 
 const data = [
   {
-    image: 'Mountain-1.png',
+    image: 'Snowy-Mountain1.png',
     id: 'mountain_1',
   },
   {
-    image: 'Mountain-2.png',
+    image: 'Snowy-Mountain2.png',
     id: 'mountain_2',
   },
   {
-    image: 'Mountain-3.png',
+    image: 'Snowy-Mountain3.png',
     id: 'mountain_3',
   },
   {
-    image: 'Mountain-4.png',
+    image: 'Snowy-Mountain4.png',
     id: 'mountain_4',
   },
   {
-    image: 'Mountain-1.png',
+    image: 'Guy-On-Cliff.png',
     id: 'mountain_5',
   },
   {
-    image: 'Mountain-3.png',
+    image: 'Snowy-Mountain4.png',
     id: 'mountain_6',
   },
 ];
 
 export const ImageCarousel = () => {
-  const theme = useMantineTheme();
-  const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm}px)`);
   const slides = data.map((item: any) => (
     <Carousel.Slide key={item.id}>
       <Card {...item} />
@@ -70,10 +67,16 @@ export const ImageCarousel = () => {
 
   return (
     <Carousel
-      slideSize="50%"
-      breakpoints={[{ maxWidth: 'sm', slideSize: '100%', slideGap: 2 }]}
-      slideGap="xl"
-      slidesToScroll={mobile ? 1 : 2}
+      withIndicators
+      height={200}
+      slideSize="33.333333%"
+      slideGap="md"
+      breakpoints={[
+        { maxWidth: 'md', slideSize: '50%' },
+        { maxWidth: 'sm', slideSize: '100%', slideGap: 0 },
+      ]}
+      loop
+      align="start"
     >
       {slides}
     </Carousel>

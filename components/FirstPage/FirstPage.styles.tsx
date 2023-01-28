@@ -10,10 +10,6 @@ export default createStyles((theme) => ({
     backgroundImage: 'url(First-Page-Image.png)',
   },
 
-  imageContainer: {
-    marginTop: '6rem',
-  },
-
   carousel: {
     marginTop: '-15rem',
     width: '50%',
@@ -27,7 +23,8 @@ export default createStyles((theme) => ({
     position: 'absolute',
     maxWidth: '100%',
     padding: theme.spacing.xl,
-    left: 250,
+    left: 200,
+    top: 45,
     [theme.fn.smallerThan('md')]: {
       left: 0,
     },
@@ -36,8 +33,8 @@ export default createStyles((theme) => ({
   history: {
     position: 'absolute',
     padding: theme.spacing.xl,
-    left: 350,
-    top: 65,
+    left: 300,
+    top: 85,
     [theme.fn.smallerThan('md')]: {
       left: 100,
     },
@@ -47,8 +44,8 @@ export default createStyles((theme) => ({
     position: 'absolute',
     maxWidth: '100%',
     padding: theme.spacing.xl,
-    left: 300,
-    top: 130,
+    left: 250,
+    top: 150,
     [theme.fn.smallerThan('md')]: {
       left: 0,
     },
