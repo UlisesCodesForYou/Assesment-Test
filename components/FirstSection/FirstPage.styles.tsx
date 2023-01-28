@@ -2,7 +2,6 @@ import { createStyles } from '@mantine/core';
 
 export default createStyles((theme) => ({
   card: {
-    marginTop: '3rem',
     height: 800,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
@@ -11,7 +10,7 @@ export default createStyles((theme) => ({
   },
 
   carousel: {
-    marginTop: '-15rem',
+    marginTop: '-13rem',
     width: '50%',
     display: 'block',
     textAlign: 'center',
@@ -34,7 +33,7 @@ export default createStyles((theme) => ({
     position: 'absolute',
     padding: theme.spacing.xl,
     left: 300,
-    top: 85,
+    top: 95,
     [theme.fn.smallerThan('md')]: {
       left: 100,
     },

@@ -1,16 +1,5 @@
 import { useState } from 'react';
-import {
-  Burger,
-  Container,
-  Group,
-  Header,
-  Image,
-  Paper,
-  Text,
-  Title,
-  Transition,
-} from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
+import { Burger, Container, Drawer, Group, Header, Image, Paper } from '@mantine/core';
 import useStyles from './Navbar.styles';
 
 const HEADER_HEIGHT = 60;
@@ -26,7 +15,7 @@ const links = [
 ];
 
 export const NavigationBar = () => {
-  const [opened, { toggle, close }] = useDisclosure(false);
+  const [opened, setOpened] = useState<boolean>(false);
   const [active, setActive] = useState(links[0].link);
   const { classes, cx } = useStyles();
 
@@ -58,15 +47,23 @@ export const NavigationBar = () => {
           {items}
         </Group>
 
-        <Burger opened={opened} onClick={toggle} className={classes.burger} size="sm" />
+        <Burger
+          opened={opened}
+          onClick={() => setOpened(true)}
+          className={classes.burger}
+          size="sm"
+        />
 
-        <Transition transition="pop-bottom-right" duration={200} mounted={opened}>
-          {(styles) => (
-            <Paper className={classes.dropdown} withBorder style={styles}>
-              {items}
-            </Paper>
-          )}
-        </Transition>
+        <Drawer
+          opened={opened}
+          onClose={() => setOpened(false)}
+          title="Menu"
+          padding="md"
+          size="md"
+          position="right"
+        >
+          <Paper className={classes.drawer}>{items}</Paper>
+        </Drawer>
       </Container>
     </Header>
   );

@@ -7,7 +7,7 @@ export default createStyles((theme) => ({
     zIndex: 1,
   },
 
-  dropdown: {
+  drawer: {
     position: 'absolute',
     top: HEADER_HEIGHT,
     left: 0,
@@ -17,8 +17,9 @@ export default createStyles((theme) => ({
     borderTopLeftRadius: 0,
     borderTopWidth: 0,
     overflow: 'hidden',
-
-    [theme.fn.largerThan('sm')]: {
+    textAlign: 'center',
+    marginTop: '4rem',
+    [theme.fn.largerThan('md')]: {
       display: 'none',
     },
   },

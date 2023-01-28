@@ -1,4 +1,4 @@
-import FirstPage from '../components/FirstPage';
+import FirstPage from '../components/FirstSection';
 
 const firstPage = () => <FirstPage />;
 
