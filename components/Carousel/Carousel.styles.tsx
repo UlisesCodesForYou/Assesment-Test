@@ -26,4 +26,14 @@ export default createStyles((theme) => ({
     fontWeight: 700,
     textTransform: 'uppercase',
   },
+
+  carouselContainer: {
+    position: 'relative',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: '#50627e',
+    opacity: 0.9,
+  },
 }));
