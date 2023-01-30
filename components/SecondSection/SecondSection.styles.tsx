@@ -14,6 +14,8 @@ export default createStyles((theme) => ({
   climb: {
     position: 'relative',
     padding: theme.spacing.xl,
+    left: -80,
+    top: 20,
 
     [theme.fn.smallerThan('md')]: {
       left: 100,
@@ -23,7 +25,8 @@ export default createStyles((theme) => ({
   ipsum: {
     position: 'relative',
     maxWidth: '100%',
-    padding: theme.spacing.xl,
+    left: -90,
+    top: 20,
 
     [theme.fn.smallerThan('md')]: {
       left: 0,

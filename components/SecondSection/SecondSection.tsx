@@ -8,12 +8,12 @@ export const SecondSection = () => {
     <>
       <Center>
         <div className={classes.numberImage}>
-          <Image width={120} height="auto" src="02-Image.png" />
+          <Image width={190} height="auto" src="02-Image.png" />
         </div>
         <div className={classes.climb}>
-          <Image src="Climb.png" width={120} height="auto" />
+          <Image src="Climb.png" width={90} height="auto" />
         </div>
-        <Image className={classes.ipsum} src="Ipsum-Text.png" width={850} height="auto" />
+        <Image className={classes.ipsum} src="Ipsum-Text.png" width={650} height="auto" />
       </Center>
     </>
   );
