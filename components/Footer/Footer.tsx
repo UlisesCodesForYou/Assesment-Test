@@ -20,18 +20,7 @@ export const Footer = () => {
             />
           </div>
         </div>
-
-        <Group spacing={0} className={classes.links} position="right" noWrap>
-          <ActionIcon size="lg">
-            <IconBrandTwitter size={18} stroke={1.5} />
-          </ActionIcon>
-          <ActionIcon size="lg">
-            <IconBrandYoutube size={18} stroke={1.5} />
-          </ActionIcon>
-          <ActionIcon size="lg">
-            <IconBrandInstagram size={18} stroke={1.5} />
-          </ActionIcon>
-        </Group>
+        <Image src="Copyright-Image.png" alt="Copyright text" width="auto" />
       </Container>
     </div>
   );
