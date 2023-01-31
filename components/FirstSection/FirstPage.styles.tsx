@@ -2,7 +2,7 @@ import { createStyles } from '@mantine/core';
 
 export default createStyles((theme) => ({
   card: {
-    height: 800,
+    height: '100vh',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
@@ -10,6 +10,7 @@ export default createStyles((theme) => ({
   },
 
   carousel: {
+    backgroundImage: 'url(peak.png)',
     marginTop: '-13rem',
     width: '50%',
     display: 'block',

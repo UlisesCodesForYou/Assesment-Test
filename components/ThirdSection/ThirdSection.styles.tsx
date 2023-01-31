@@ -2,19 +2,16 @@ import { createStyles } from '@mantine/core';
 
 export default createStyles((theme) => ({
   card: {
-    height: 240,
+    height: '100vh',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
   },
 
   content: {
-    position: 'absolute',
+    position: 'relative',
     padding: theme.spacing.xl,
     zIndex: 1,
-    top: 0,
-    bottom: 0,
-    right: 0,
-    left: 0,
+    top: 80,
   },
 
   action: {
