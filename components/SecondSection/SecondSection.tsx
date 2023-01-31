@@ -6,7 +6,7 @@ export const SecondSection = () => {
 
   return (
     <>
-      <Center>
+      <Center style={{ width: '100%', height: 300 }}>
         <div className={classes.numberImage}>
           <Image width={190} height="auto" src="02-Image.png" />
         </div>
@@ -18,11 +18,3 @@ export const SecondSection = () => {
     </>
   );
 };
-
-// <div className={classes.content}>
-//   <Image width={120} height="auto" src="01-Image.png" />
-// </div>
-// <div className={classes.history}>
-//   <Image src="HSTRY.png" width={120} height="auto" />
-// </div>
-// <Image className={classes.lorem} src="Lorem-Page-Text.png" width={850} height="auto" />

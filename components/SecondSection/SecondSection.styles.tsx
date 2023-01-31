@@ -1,13 +1,17 @@
 import { createStyles } from '@mantine/core';
 
 export default createStyles((theme) => ({
+  centerContainer: {
+    textAlign: 'center',
+  },
+
   numberImage: {
     position: 'relative',
     maxWidth: '100%',
     padding: theme.spacing.xl,
 
     [theme.fn.smallerThan('md')]: {
-      left: 0,
+      left: 190,
     },
   },
 
@@ -29,7 +33,8 @@ export default createStyles((theme) => ({
     top: 20,
 
     [theme.fn.smallerThan('md')]: {
-      left: 0,
+      left: -190,
+      top: 120,
     },
   },
 }));

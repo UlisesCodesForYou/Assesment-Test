@@ -16,9 +16,10 @@ export default createStyles((theme) => ({
     paddingBottom: theme.spacing.xl * 10,
     zIndex: 1,
 
-    [theme.fn.smallerThan('sm')]: {
-      height: 500,
+    [theme.fn.smallerThan('md')]: {
       paddingBottom: theme.spacing.xl * 13,
+      width: '300px',
+      marinLeft: '12rem',
     },
   },
 
