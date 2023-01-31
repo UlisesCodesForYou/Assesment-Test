@@ -9,18 +9,15 @@ export const Footer = () => {
     <div className={classes.footer}>
       <Container className={classes.inner}>
         <div className={classes.imageContainer}>
-          <Image
-            radius="xl"
-            src="Mountain-Drawing.png"
-            alt="Mountain Drawing"
-            width={50}
-            height={50}
-          />
+          <Image radius="xl" src="Footer-Logo.png" alt="Mountain Drawing" width={50} height={50} />
           <div className={classes.textContainer}>
-            <Title className={classes.title} order={1}>
-              LOSANGELES
-              <Text className={classes.titleText}>MOUNTAINS</Text>
-            </Title>
+            <Image
+              src="LA-Mountain-Footer-Logo.png"
+              alt="Los Angeles mountain text"
+              width="auto"
+              height={50}
+              className={classes.title}
+            />
           </div>
         </div>
 
