@@ -7,26 +7,35 @@ export default createStyles((theme) => ({
     backgroundPosition: 'center',
   },
 
-  content: {
-    position: 'relative',
-    padding: theme.spacing.xl,
-    zIndex: 1,
-    top: 80,
-  },
-
-  action: {
+  rectangle: {
     position: 'absolute',
-    bottom: theme.spacing.xl,
-    right: theme.spacing.xl,
+    maxWidth: '100%',
+    padding: theme.spacing.xl,
+    left: 200,
+    top: 45,
+    [theme.fn.smallerThan('md')]: {
+      left: 0,
+    },
   },
 
-  title: {
-    color: theme.white,
-    marginBottom: theme.spacing.xs / 2,
+  schedule: {
+    position: 'absolute',
+    padding: theme.spacing.xl,
+    left: 240,
+    top: 65,
+    [theme.fn.smallerThan('md')]: {
+      left: 100,
+    },
   },
 
-  description: {
-    color: theme.white,
-    maxWidth: 220,
+  dates: {
+    position: 'absolute',
+    maxWidth: '100%',
+    padding: theme.spacing.xl,
+    left: 240,
+    top: 105,
+    [theme.fn.smallerThan('md')]: {
+      left: 0,
+    },
   },
 }));

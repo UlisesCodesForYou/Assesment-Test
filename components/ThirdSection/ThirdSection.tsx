@@ -1,4 +1,4 @@
-import { Card, Image, Grid } from '@mantine/core';
+import { Card, Image } from '@mantine/core';
 import useStyles from './ThirdSection.styles';
 
 export const ThirdSection = () => {
@@ -6,11 +6,13 @@ export const ThirdSection = () => {
 
   return (
     <Card style={{ backgroundImage: 'url(Snowy-Mountain2.png)' }} className={classes.card}>
-      <Grid justify="space-between" align="flex-start">
-        <Grid.Col span={3} style={{ minHeight: 90 }}>
-          <Image src="Mountain-Dates-2.png" width="auto" height={100} alt="mountain schedule" />
-        </Grid.Col>
-      </Grid>
+      <div className={classes.rectangle}>
+        <Image width="auto" height="auto" src="Rectangle-Image.png" />
+      </div>
+      <div className={classes.schedule}>
+        <Image src="Schedule-Image.png" width={120} height="auto" />
+      </div>
+      <Image className={classes.dates} src="Mountain-Dates-2.png" width="auto" height="auto" />
     </Card>
   );
 };
