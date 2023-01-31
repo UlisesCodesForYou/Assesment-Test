@@ -1,5 +1,4 @@
-import { Container, Group, ActionIcon, Image, Text, Title } from '@mantine/core';
-import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons';
+import { Container, Image } from '@mantine/core';
 import useStyles from './Footer.styles';
 
 export const Footer = () => {
@@ -10,13 +9,13 @@ export const Footer = () => {
       <Container className={classes.inner}>
         <div className={classes.imageContainer}>
           <Image radius="xl" src="Footer-Logo.png" alt="Mountain Drawing" width={50} height={50} />
-          <div className={classes.textContainer}>
+          <div className={classes.mountainContainer}>
             <Image
               src="LA-Mountain-Footer-Logo.png"
               alt="Los Angeles mountain text"
               width="auto"
               height={50}
-              className={classes.title}
+              className={classes.losAngelesText}
             />
           </div>
         </div>
