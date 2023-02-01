@@ -33,9 +33,17 @@ export default createStyles((theme) => ({
     maxWidth: '100%',
     padding: theme.spacing.xl,
     left: 240,
-    top: 105,
+    top: 115,
     [theme.fn.smallerThan('md')]: {
       left: 0,
+    },
+  },
+
+  inner: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    [theme.fn.smallerThan('sm')]: {
+      flexDirection: 'column',
     },
   },
 }));

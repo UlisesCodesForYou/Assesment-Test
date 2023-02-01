@@ -6,8 +6,7 @@ export const ThirdSection = () => {
 
   return (
     <>
-      <Image src="Rectangle 20.png" width="auto" height="auto" />
-      <Image src="Mountain 1.png" width="auto" height="auto" />
+      <Image src="Rectangle 20.png" width="100%" height="auto" />
       <Card style={{ backgroundImage: 'url(Snowy-Mountain2.png)' }} className={classes.card}>
         <div className={classes.rectangle}>
           <Image width="auto" height="auto" src="Rectangle-Image.png" />

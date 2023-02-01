@@ -27,7 +27,6 @@ export const NavigationBar = () => {
       onClick={(event) => {
         event.preventDefault();
         setActive(link.link);
-        close();
       }}
     >
       {link.label}
